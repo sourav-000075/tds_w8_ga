@@ -11,12 +11,12 @@ def user_input():
         'n2':n2
     }
     features = pd.DataFrame(data, index=[0])
-    return features,n1,n2
+    return features
 
-df,n1,n2 = user_input()
-print('here')
+df = user_input()
+#print('here')
 #st.subheader('User Input parameters')
 #st.write(df.to_dict())
 st.subheader('Sum:')
-print(n1+n2)
-st.write(n1+n2)
+#print(n1+n2)
+st.write(df['n1']+df['n2'])
